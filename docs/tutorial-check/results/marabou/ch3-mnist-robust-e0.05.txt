@@ -1,0 +1,21 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s mnist-robustness.vcl -n classifier:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/mnist-classifier.onnx -d trainingImages:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/t2-images.idx -d trainingLabels:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/t2-labels.idx -p epsilon:0.05 -p eta:0 -p delta:1 -y robust -v Marabou -a --timeout=300)
+
+  robust!0 [.......................................................] 0/9 queries
+  robust!0 [======>................................................] 1/9 queries
+  robust!1 [.......................................................] 0/9 queries
+  robust!1 [======>................................................] 1/9 queries
+Verifying properties:
+
+    result: [93m?[m - Marabou timed out
+
+    result: [93m?[m - Marabou timed out
+robust:
+    verified:  0/2
+    falsified: 0/2
+    timed-out: 2/2
+    errored:   0/2
+[93m
+Warning: the following parameters were provided but not used by the specification: { delta
+; eta
+}
+[m

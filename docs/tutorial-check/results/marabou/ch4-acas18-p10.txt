@@ -1,0 +1,9 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-4/solutions/acas2 && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s specs-verify/property10.vcl -n acasXu:acasXu_1_8.onnx -v Marabou -a --timeout=300)
+
+  property10 [.....................................................] 0/4 queries
+  property10 [=============>.......................................] 1/4 queries
+  property10 [==========================>..........................] 2/4 queries
+  property10 [=======================================>.............] 3/4 queries
+  property10 [=====================================================] 4/4 queries
+Verifying properties:
+    result: [92m🗸[m - Marabou proved no counterexample exists

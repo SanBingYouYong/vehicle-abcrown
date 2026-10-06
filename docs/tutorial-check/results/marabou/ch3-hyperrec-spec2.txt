@@ -1,0 +1,4 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions/hyperrec && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s spec2.vcl -n classifier:adv.onnx -d inputs:5inputs.idx -v Marabou -a --timeout=300)
+
+Error in file 'spec2.vcl' at Line 33, Columns 1-2: Unable to infer the value of parameter 'n'.
+Fix: For a parameter's value to be inferable, it must be used as the dimension of a dataset (networks will be supported later).

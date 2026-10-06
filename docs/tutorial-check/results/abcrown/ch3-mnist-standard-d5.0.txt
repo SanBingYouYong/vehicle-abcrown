@@ -1,0 +1,52 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s mnist-robustness-standard.vcl -n classifier:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/mnist-classifier.onnx -d trainingImages:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/t2-images.idx -p epsilon:0.005 -p delta:5.0 -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+  standardRobust!0 [.............................................]  0/20 queries
+  standardRobust!0 [==>..........................................]  1/20 queries
+  standardRobust!0 [====>........................................]  2/20 queries
+  standardRobust!0 [======>......................................]  3/20 queries
+  standardRobust!0 [=========>...................................]  4/20 queries
+  standardRobust!0 [===========>.................................]  5/20 queries
+  standardRobust!0 [=============>...............................]  6/20 queries
+  standardRobust!0 [===============>.............................]  7/20 queries
+  standardRobust!0 [==================>..........................]  8/20 queries
+  standardRobust!0 [====================>........................]  9/20 queries
+  standardRobust!0 [======================>......................] 10/20 queries
+  standardRobust!0 [========================>....................] 11/20 queries
+  standardRobust!0 [===========================>.................] 12/20 queries
+  standardRobust!0 [=============================>...............] 13/20 queries
+  standardRobust!0 [===============================>.............] 14/20 queries
+  standardRobust!0 [=================================>...........] 15/20 queries
+  standardRobust!0 [====================================>........] 16/20 queries
+  standardRobust!0 [======================================>......] 17/20 queries
+  standardRobust!0 [========================================>....] 18/20 queries
+  standardRobust!0 [==========================================>..] 19/20 queries
+  standardRobust!0 [=============================================] 20/20 queries
+  standardRobust!1 [.............................................]  0/20 queries
+  standardRobust!1 [==>..........................................]  1/20 queries
+  standardRobust!1 [====>........................................]  2/20 queries
+  standardRobust!1 [======>......................................]  3/20 queries
+  standardRobust!1 [=========>...................................]  4/20 queries
+  standardRobust!1 [===========>.................................]  5/20 queries
+  standardRobust!1 [=============>...............................]  6/20 queries
+  standardRobust!1 [===============>.............................]  7/20 queries
+  standardRobust!1 [==================>..........................]  8/20 queries
+  standardRobust!1 [====================>........................]  9/20 queries
+  standardRobust!1 [======================>......................] 10/20 queries
+  standardRobust!1 [========================>....................] 11/20 queries
+  standardRobust!1 [===========================>.................] 12/20 queries
+  standardRobust!1 [=============================>...............] 13/20 queries
+  standardRobust!1 [===============================>.............] 14/20 queries
+  standardRobust!1 [=================================>...........] 15/20 queries
+  standardRobust!1 [====================================>........] 16/20 queries
+  standardRobust!1 [======================================>......] 17/20 queries
+  standardRobust!1 [========================================>....] 18/20 queries
+  standardRobust!1 [==========================================>..] 19/20 queries
+  standardRobust!1 [=============================================] 20/20 queries
+Verifying properties:
+    result: [92m🗸[m - abcrown proved no counterexample exists
+    result: [92m🗸[m - abcrown proved no counterexample exists
+standardRobust:
+    verified:  2/2
+    falsified: 0/2
+    timed-out: 0/2
+    errored:   0/2

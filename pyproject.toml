@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vehicle-abcrown"
+dynamic = ["version"]
+description = "Use alpha-beta-CROWN as a verification backend for the Vehicle specification language"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "onnx", "onnxruntime"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+vehicle-abcrown = "vehicle_abcrown.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "vehicle_abcrown.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "abcrown: needs alpha-beta-CROWN (and normally a GPU)",
+    "vehicle: needs the vehicle executable",
+]

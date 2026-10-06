@@ -1,0 +1,9 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-2/chapter-code && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s acasXu.vcl -n acasXu:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/acasXu/acasXu_1_7.onnx -y property10 -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+  property10 [.....................................................] 0/4 queries
+  property10 [=============>.......................................] 1/4 queries
+  property10 [==========================>..........................] 2/4 queries
+  property10 [=======================================>.............] 3/4 queries
+  property10 [=====================================================] 4/4 queries
+Verifying properties:
+    result: [92m🗸[m - abcrown proved no counterexample exists

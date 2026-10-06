@@ -1,0 +1,8 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-2/solutions/iris && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s iris-possible-answers.vcl -n iris:iris_model.onnx -y property2 -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+  property2 [......................................................] 0/2 queries
+  property2 [===========================>..........................] 1/2 queries
+Verifying properties:
+
+    result: [91m✗[m - abcrown found a counterexample
+      x: [ 5.800480842590332, 2.1366748809814453, 1.912294864654541, 1.4439913034439087 ]

@@ -1,0 +1,6 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions/repro && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s linear.vcl -n f:tiny.onnx -p epsilon:0.1 -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+  p [..............................................................] 0/1 queries
+  p [==============================================================] 1/1 queries
+Verifying properties:
+    result: [93m?[m - abcrown timed out

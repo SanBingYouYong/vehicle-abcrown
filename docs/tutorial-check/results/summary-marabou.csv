@@ -1,0 +1,53 @@
+case,solver,verified,falsified,timeout,errored,exit,seconds,expected,error
+ch2-acas17-p1,marabou,1,0,0,0,0,0.3,,
+ch2-acas17-p2,marabou,1,0,0,0,0,50.2,,
+ch2-acas17-p3,marabou,0,1,0,0,0,0.5,p3: falsified (website),
+ch2-acas17-p4,marabou,0,1,0,0,0,0.6,,
+ch2-acas17-p5,marabou,0,1,0,0,0,0.6,,
+ch6-pk-website,marabou,3,0,0,6,0,1.0,"all verified (website, Rocq lemmas validated)",
+ch6-pk-std,marabou,3,0,0,6,0,0.5,"all verified (website, Rocq lemmas validated)",
+ch3-repro-linear,marabou,0,1,0,0,0,0.3,,
+ch3-repro-reduceadd-linear,marabou,0,1,0,0,0,0.3,,
+ch3-repro-quadratic,marabou,0,0,0,0,1,0.3,non-linear: Vehicle cannot compile,"Error in file 'quadratic.vcl' at Line 13, Columns 1-2: The property 'p' contains a non-linear constraint which is not supported by the Marabou query format. In particular the multiplication in file 'quadratic.vcl' at Line 14, Columns 34-35 involves   1. the quantified variable 'x' introduced in file"
+ch3-repro-reduceadd,marabou,0,0,0,0,1,0.3,Vehicle crashes (repro/README.md),"Error: Unblocking evaluation results in unevaluable result Stack: CallStack (from HasCallStack):   developerError, called at src/Vehicle/Compile/Unblock.hs:472:23 in vehicle-0.28.0-inplace:Vehicle.Compile.Unblock   forceEval, called at src/Vehicle/Backend/Solver/UserVariableElimination/PurifyAsserti"
+ch2-acas17-p6,marabou,0,0,1,0,0,300.4,,
+ch2-iris-p0,marabou,0,0,0,0,1,0.2,spec error: input unbounded,"Error in file 'iris-possible-answers.vcl' at Line 61, Columns 1-10: The property 'User.property0' cannot be compiled as cannot deduce lower and upper bounds for the input of    iris    iris x In particular, missing lower bounds for indices [0] [1] [2] [3] and missing upper bounds for indices [1] [2]"
+ch2-iris-p1,marabou,0,1,0,0,0,0.3,,
+ch2-iris-p2,marabou,0,1,0,0,0,0.3,,
+ch2-iris-p3,marabou,0,1,0,0,0,0.3,,
+ch2-iris-p4,marabou,0,1,0,0,0,0.3,,
+ch2-iris-p5,marabou,1,0,0,0,0,0.3,,
+ch2-iris-p6,marabou,0,1,0,0,0,0.3,,
+ch2-acas17-p7,marabou,0,0,1,0,0,300.5,,
+ch2-acas17-p8,marabou,0,1,0,0,0,18.5,,
+ch2-acas17-p9,marabou,0,1,0,0,0,1.1,,
+ch2-acas17-p10,marabou,1,0,0,0,0,19.1,,
+ch2-iris,marabou,0,0,0,0,1,0.2,,"Error in file 'iris-possible-answers.vcl' at Line 61, Columns 1-10: The property 'User.property0' cannot be compiled as cannot deduce lower and upper bounds for the input of    iris    iris x In particular, missing lower bounds for indices [0] [1] [2] [3] and missing upper bounds for indices [1] [2]"
+ch3-mnist-robust-e0.005,marabou,2,0,0,0,0,42.2,2/2 verified (website),
+ch3-mnist-robust-e0.01,marabou,2,0,0,0,0,86.6,,
+ch3-mnist-robust-e0.05,marabou,0,0,2,0,0,676.0,,
+ch3-mnist-strong-e0.005,marabou,2,0,0,0,0,3.8,,
+ch3-mnist-scr-e0.005,marabou,2,0,0,0,0,3.9,,
+ch3-mnist-standard-d1.0,marabou,0,0,0,0,1,0.3,Marabou cannot: two network applications,"Error in file 'mnist-robustness-standard.vcl' at Line 57, Columns 1-15: The Marabou query format currently doesn't support properties that involve multiple network applications. This property involves the following network applications:   classifier trainingImages ! 0   classifier x Fix: this is on "
+ch3-mnist-standard-d5.0,marabou,0,0,0,0,1,0.3,Marabou cannot: two network applications,"Error in file 'mnist-robustness-standard.vcl' at Line 57, Columns 1-15: The Marabou query format currently doesn't support properties that involve multiple network applications. This property involves the following network applications:   classifier trainingImages ! 0   classifier x Fix: this is on "
+ch3-fmnist-euclidean,marabou,0,0,0,0,1,0.3,non-linear (L2): Vehicle cannot compile,"Error: Unblocking evaluation results in unevaluable result Stack: CallStack (from HasCallStack):   developerError, called at src/Vehicle/Compile/Unblock.hs:472:23 in vehicle-0.28.0-inplace:Vehicle.Compile.Unblock   forceEval, called at src/Vehicle/Backend/Solver/UserVariableElimination/PurifyAsserti"
+ch3-hyperrec-spec,marabou,0,1,0,0,0,0.3,,
+ch3-hyperrec-spec2,marabou,0,0,0,0,1,0.4,,"Error in file 'spec2.vcl' at Line 33, Columns 1-2: Unable to infer the value of parameter 'n'. Fix: For a parameter's value to be inferable, it must be used as the dimension of a dataset (networks will be supported later)."
+ch3-fmnist-ex7,marabou,40,10,0,0,0,168.5,40/50 verified (expected-output-0-49.txt),
+ch4-fmnist-vanilla-e0.005,marabou,37,13,0,0,0,579.6,37/50 verified (capucci-pdt/README.md),
+ch4-fmnist-vanilla-e0.02,marabou,22,28,0,0,0,509.2,22/50 verified (capucci-pdt/README.md),
+ch4-acas18-p1,marabou,1,0,0,0,0,3.1,verified (acas2/README.md),
+ch4-acas18-p2,marabou,1,0,0,0,0,137.6,verified (acas2/README.md),
+ch4-acas18-p3,marabou,0,1,0,0,0,1.8,falsified (acas2/README.md),
+ch4-acas18-p4,marabou,0,1,0,0,0,1.8,falsified (acas2/README.md),
+ch4-acas18-p5,marabou,0,1,0,0,0,1.8,falsified (acas2/README.md),
+ch4-acas18-p6,marabou,0,0,1,0,0,301.6,timeout (900 s) (acas2/README.md),
+ch4-acas18-p7,marabou,0,0,1,0,0,301.7,timeout (1588 s) (acas2/README.md),
+ch4-acas18-p8,marabou,0,0,1,0,0,301.8,timeout (1284 s) (acas2/README.md),
+ch4-acas18-p9,marabou,0,1,0,0,0,1.9,falsified (acas2/README.md),
+ch4-acas18-p10,marabou,1,0,0,0,0,61.9,verified (acas2/README.md),
+ch5-wind-safe,marabou,1,0,0,0,0,1.1,verified (chapter-5/chapter-code/README.md),
+ch5-records,marabou,1,0,0,0,0,1.2,,
+ch5-centred,marabou,2,0,0,0,0,2.1,,
+ch5-param-s0.5,marabou,1,0,0,0,0,1.1,verified (chapter-5/solutions/README.md),
+ch5-param-s0.1,marabou,0,1,0,0,0,0.7,"falsified, x = [-0.1, -0.3] (chapter-5/solutions/README.md)",

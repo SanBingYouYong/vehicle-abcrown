@@ -1,0 +1,7 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-4/solutions/acas2 && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s specs-verify/property08.vcl -n acasXu:acasXu_1_8.onnx -v Marabou -a --timeout=300)
+
+  property8 [....................................................]  0/16 queries
+  property8 [===>................................................]  1/16 queries
+Verifying properties:
+
+    result: [93m?[m - Marabou timed out

@@ -1,0 +1,15 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-5/solutions && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s windController-parameterised-stability-solution.vcl -n controller:/home/shuyuan/F21ZK/tutorial/chapter-5/chapter-code/controller.onnx -p maxDistance:0.2 -p maxSensorChange:0.2 -p maxSpeed:0.1 -y sensorNearCenter -v Marabou -a --timeout=300)
+
+  sensorNearCenter [...............................................] 0/2 queries
+  sensorNearCenter [=======================>.......................] 1/2 queries
+Verifying properties:
+
+    result: [91m✗[m - Marabou found a counterexample
+      x: [ -0.1, -0.3 ]
+[93m
+Warning: In property 'sensorNearCenter', at least one of the generated queries were found to contain a strict inequality (i.e. constraints of the form 'x < y'). Unfortunately the Marabou query format only supports non-strict inequalities (i.e. constraints of the form 'x <= y').
+
+In order to provide support, Vehicle has automatically converted the strict inequalities to non-strict inequalites. This is not sound, but errors will be at most the floating point epsilon used by the solver, which is usually very small (e.g. 1e-9). However, this may lead to unexpected behaviour (e.g. loss of the law of excluded middle).
+
+See https://github.com/vehicle-lang/vehicle/issues/74 for further details.
+[m

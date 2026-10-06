@@ -1,0 +1,8 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-2/chapter-code && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s acasXu.vcl -n acasXu:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/acasXu/acasXu_1_7.onnx -y property9 -v Marabou -a --timeout=300)
+
+  property9 [......................................................] 0/4 queries
+  property9 [=============>........................................] 1/4 queries
+Verifying properties:
+
+    result: [91m✗[m - Marabou found a counterexample
+      x: [ 2625.022018, -0.350689631776, -3.131589171072, 100.1936, 1.1112 ]

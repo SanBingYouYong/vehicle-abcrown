@@ -1,0 +1,10 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/tools/tutorial-check/ch6-data && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s pk.vcl -n pk:pk.onnx -d meanScalingValues:pk_mean.idx -d standardDeviationValues:pk_mean.idx -p Ka:4.5 -p Ke:3.5 -p Vd:10 -p C_safe:30 -p ttd:2 -p Ka_over:0.3228 -p Ka_under:0.3227 -p Ke_over:0.415 -p Ke_under:0.4149 -p eps:0.001 -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300 -c /home/shuyuan/F21ZK/tutorial/tools/tutorial-check/results/abcrown/ch6-pk-website-cache)
+
+[93m
+Warning: The property 'Ka_pos' was found to evaluate to 'True' without needing to call the solver. This usually indicates a fault with either the specification or any external datasets used.
+
+
+Warning: The property 'Ke_pos' was found to evaluate to 'True' without needing to call the solver. This usually indicates a fault with either the specification or any external datasets used.
+[m
+Error in file 'pk.vcl' at Line 50, Columns 1-8: After compilation, property 'Ke_n_Ka' contains a `!=` which is not current supported by the VNN-LIB. 
+Fix: This is a limitation of the current implementation rather than a fundamental problem. If you would like this to be fixed, please comment at 'https://github.com/vehicle-lang/vehicle/issues/ 74'.

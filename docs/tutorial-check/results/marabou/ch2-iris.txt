@@ -1,0 +1,12 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-2/solutions/iris && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s iris-possible-answers.vcl -n iris:iris_model.onnx -v Marabou -a --timeout=300)
+
+Error in file 'iris-possible-answers.vcl' at Line 61, Columns 1-10: The property 'User.property0' cannot be compiled as cannot deduce lower and upper bounds for the input of 
+  iris 
+  iris x
+In particular, missing lower bounds for indices [0]
+[1]
+[2]
+[3] and missing upper bounds for indices [1]
+[2]
+[3] for tensor 'x'
+Fix: add additional inequalities that restrict the variables in the value above.

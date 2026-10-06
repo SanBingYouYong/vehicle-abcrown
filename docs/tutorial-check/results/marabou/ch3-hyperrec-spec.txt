@@ -1,0 +1,7 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions/hyperrec && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s spec.vcl -n classifier:adv.onnx -d inputs:5inputs.idx -v Marabou -a --timeout=300)
+
+  property [.......................................................] 0/1 queries
+  property [=======================================================] 1/1 queries
+Verifying properties:
+    result: [91m✗[m - Marabou found a counterexample
+      x: [ 6.6178e-2, 0.113149, -0.231465, 6.518e-2, -9.1338e-2, 3.011e-2, -0.122525, 0.127135, 0.102987, -0.258796, -0.162145, -3.9038e-2, 1.409e-3, -7.2139e-2, -6.7265e-2, -6.6685e-2, -0.100182, -8.1726e-2, -6.1328e-2, -7.487e-2, -3.0188e-2, -7.906e-2, 4.4576e-2, -5.4421e-2, -6.244e-2, -0.14472, -3.4152e-2, -5.4844e-2, -5.9159e-2, -2.7403e-2 ]

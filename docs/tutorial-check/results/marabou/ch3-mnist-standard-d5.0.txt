@@ -1,0 +1,7 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s mnist-robustness-standard.vcl -n classifier:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/mnist-classifier.onnx -d trainingImages:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/t2-images.idx -p epsilon:0.005 -p delta:5.0 -v Marabou -a --timeout=300)
+
+Error in file 'mnist-robustness-standard.vcl' at Line 57, Columns 1-15: The Marabou query format currently doesn't support properties that involve multiple network applications.
+This property involves the following network applications:
+  classifier trainingImages ! 0
+  classifier x
+Fix: this is on our road map to fix with VNNLib 2.0, but please open an issue on the Issue tracker with your use-case.

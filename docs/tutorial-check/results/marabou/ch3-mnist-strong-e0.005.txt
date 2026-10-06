@@ -1,0 +1,25 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s mnist-robustness.vcl -n classifier:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/mnist-classifier.onnx -d trainingImages:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/t2-images.idx -d trainingLabels:/home/shuyuan/F21ZK/tutorial/resources-by-dataset/mnist/t2-labels.idx -p epsilon:0.005 -p eta:0 -p delta:1 -y strongClassificationRobust -v Marabou -a --timeout=300)
+
+  strongClassificationRobust!0 [...................................] 0/1 queries
+  strongClassificationRobust!0 [===================================] 1/1 queries
+  strongClassificationRobust!1 [...................................] 0/1 queries
+  strongClassificationRobust!1 [===================================] 1/1 queries
+Verifying properties:
+    result: [92m🗸[m - Marabou proved no counterexample exists
+    result: [92m🗸[m - Marabou proved no counterexample exists
+strongClassificationRobust:
+    verified:  2/2
+    falsified: 0/2
+    timed-out: 0/2
+    errored:   0/2
+[93m
+Warning: the following parameters were provided but not used by the specification: { delta
+}
+
+
+Warning: In property 'strongClassificationRobust', at least one of the generated queries were found to contain a strict inequality (i.e. constraints of the form 'x < y'). Unfortunately the Marabou query format only supports non-strict inequalities (i.e. constraints of the form 'x <= y').
+
+In order to provide support, Vehicle has automatically converted the strict inequalities to non-strict inequalites. This is not sound, but errors will be at most the floating point epsilon used by the solver, which is usually very small (e.g. 1e-9). However, this may lead to unexpected behaviour (e.g. loss of the law of excluded middle).
+
+See https://github.com/vehicle-lang/vehicle/issues/74 for further details.
+[m

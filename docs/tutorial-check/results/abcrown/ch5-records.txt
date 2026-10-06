@@ -1,0 +1,7 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-5/solutions && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s windController-records-solution.vcl -n controller:/home/shuyuan/F21ZK/tutorial/chapter-5/chapter-code/controller.onnx -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300 -c /home/shuyuan/F21ZK/tutorial/tools/tutorial-check/results/abcrown/ch5-records-cache)
+
+  safe [...........................................................] 0/2 queries
+  safe [=============================>.............................] 1/2 queries
+  safe [===========================================================] 2/2 queries
+Verifying properties:
+    result: [92m🗸[m - abcrown proved no counterexample exists

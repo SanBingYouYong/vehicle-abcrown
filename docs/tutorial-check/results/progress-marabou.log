@@ -1,0 +1,39 @@
+ch2-acas17-p1                marabou  v=1 f=0 t=0 e=0 0.3s 
+ch2-acas17-p2                marabou  v=1 f=0 t=0 e=0 50.2s 
+ch2-acas17-p3                marabou  v=0 f=1 t=0 e=0 0.5s 
+ch2-acas17-p4                marabou  v=0 f=1 t=0 e=0 0.6s 
+ch2-acas17-p5                marabou  v=0 f=1 t=0 e=0 0.6s 
+ch2-acas17-p6                marabou  v=0 f=0 t=1 e=0 300.4s 
+ch2-acas17-p7                marabou  v=0 f=0 t=1 e=0 300.5s 
+ch2-acas17-p8                marabou  v=0 f=1 t=0 e=0 18.5s 
+ch2-acas17-p9                marabou  v=0 f=1 t=0 e=0 1.1s 
+ch2-acas17-p10               marabou  v=1 f=0 t=0 e=0 19.1s 
+ch2-iris                     marabou  v=0 f=0 t=0 e=0 0.2s Error in file 'iris-possible-answers.vcl' at Line 61, Columns 1-10: The property
+ch3-mnist-robust-e0.005      marabou  v=2 f=0 t=0 e=0 42.2s 
+ch3-mnist-robust-e0.01       marabou  v=2 f=0 t=0 e=0 86.6s 
+ch3-mnist-robust-e0.05       marabou  v=0 f=0 t=2 e=0 676.0s 
+ch3-mnist-strong-e0.005      marabou  v=2 f=0 t=0 e=0 3.8s 
+ch3-mnist-scr-e0.005         marabou  v=2 f=0 t=0 e=0 3.9s 
+ch3-mnist-standard-d1.0      marabou  v=0 f=0 t=0 e=0 0.3s Error in file 'mnist-robustness-standard.vcl' at Line 57, Columns 1-15: The Mara
+ch3-mnist-standard-d5.0      marabou  v=0 f=0 t=0 e=0 0.3s Error in file 'mnist-robustness-standard.vcl' at Line 57, Columns 1-15: The Mara
+ch3-fmnist-euclidean         marabou  v=0 f=0 t=0 e=0 0.3s Error: Unblocking evaluation results in unevaluable result Stack: CallStack (fro
+ch3-hyperrec-spec            marabou  v=0 f=1 t=0 e=0 0.3s 
+ch3-hyperrec-spec2           marabou  v=0 f=0 t=0 e=0 0.4s Error in file 'spec2.vcl' at Line 33, Columns 1-2: Unable to infer the value of 
+ch3-fmnist-ex7               marabou  v=40 f=10 t=0 e=0 168.5s 
+ch4-fmnist-vanilla-e0.005    marabou  v=37 f=13 t=0 e=0 579.6s 
+ch4-fmnist-vanilla-e0.02     marabou  v=22 f=28 t=0 e=0 509.2s 
+ch4-acas18-p1                marabou  v=1 f=0 t=0 e=0 3.1s 
+ch4-acas18-p2                marabou  v=1 f=0 t=0 e=0 137.6s 
+ch4-acas18-p3                marabou  v=0 f=1 t=0 e=0 1.8s 
+ch4-acas18-p4                marabou  v=0 f=1 t=0 e=0 1.8s 
+ch4-acas18-p5                marabou  v=0 f=1 t=0 e=0 1.8s 
+ch4-acas18-p6                marabou  v=0 f=0 t=1 e=0 301.6s 
+ch4-acas18-p7                marabou  v=0 f=0 t=1 e=0 301.7s 
+ch4-acas18-p8                marabou  v=0 f=0 t=1 e=0 301.8s 
+ch4-acas18-p9                marabou  v=0 f=1 t=0 e=0 1.9s 
+ch4-acas18-p10               marabou  v=1 f=0 t=0 e=0 61.9s 
+ch5-wind-safe                marabou  v=1 f=0 t=0 e=0 1.1s 
+ch5-records                  marabou  v=1 f=0 t=0 e=0 1.2s 
+ch5-centred                  marabou  v=2 f=0 t=0 e=0 2.1s 
+ch5-param-s0.5               marabou  v=1 f=0 t=0 e=0 1.1s 
+ch5-param-s0.1               marabou  v=0 f=1 t=0 e=0 0.7s 

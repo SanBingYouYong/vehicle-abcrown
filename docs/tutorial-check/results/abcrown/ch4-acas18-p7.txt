@@ -1,0 +1,8 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-4/solutions/acas2 && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s specs-verify/property07.vcl -n acasXu:acasXu_1_8.onnx -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+  property7 [......................................................] 0/2 queries
+  property7 [===========================>..........................] 1/2 queries
+Verifying properties:
+
+    result: [91m✗[m - abcrown found a counterexample
+      x: [ 30357.091119537115, 4.429141558676958e-2, -2.748685335896015, 100.6059855222702, 301.7762839794159 ]

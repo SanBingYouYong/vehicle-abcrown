@@ -1,0 +1,8 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-3/solutions/repro && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s reduceadd.vcl -n f:tiny.onnx -p epsilon:0.1 -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+Something went wrong internally. Please report the error shown below to `https://github.com/vehicle-lang/vehicle/issues`.
+Error: Unblocking evaluation results in unevaluable result
+Stack:
+CallStack (from HasCallStack):
+  developerError, called at src/Vehicle/Compile/Unblock.hs:472:23 in vehicle-0.28.0-inplace:Vehicle.Compile.Unblock
+  forceEval, called at src/Vehicle/Backend/Solver/UserVariableElimination/PurifyAssertion.hs:179:6 in vehicle-0.28.0-inplace:Vehicle.Backend.Solver.UserVariableElimination.PurifyAssertion

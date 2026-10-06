@@ -1,0 +1,8 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-4/solutions/acas2 && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s specs-verify/property09.vcl -n acasXu:acasXu_1_8.onnx -v Marabou -a --timeout=300)
+
+  property9 [......................................................] 0/4 queries
+  property9 [=============>........................................] 1/4 queries
+Verifying properties:
+
+    result: [91m✗[m - Marabou found a counterexample
+      x: [ 6940.43275, -0.213288964064, -3.141592, 109.1663, 58.4076 ]

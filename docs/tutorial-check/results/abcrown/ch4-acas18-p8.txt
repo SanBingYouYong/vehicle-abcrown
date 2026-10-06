@@ -1,0 +1,21 @@
+$ (cd /home/shuyuan/F21ZK/tutorial/chapter-4/solutions/acas2 && /home/shuyuan/F21ZK/tutorial/.venv/bin/vehicle verify -s specs-verify/property08.vcl -n acasXu:acasXu_1_8.onnx -v /home/shuyuan/F21ZK/tutorial/tools/vehicle-abcrown/bin/vehicle-abcrown -a --timeout 300)
+
+  property8 [....................................................]  0/16 queries
+  property8 [===>................................................]  1/16 queries
+  property8 [======>.............................................]  2/16 queries
+  property8 [=========>..........................................]  3/16 queries
+  property8 [=============>......................................]  4/16 queries
+  property8 [================>...................................]  5/16 queries
+  property8 [===================>................................]  6/16 queries
+  property8 [======================>.............................]  7/16 queries
+  property8 [==========================>.........................]  8/16 queries
+  property8 [=============================>......................]  9/16 queries
+  property8 [================================>...................] 10/16 queries
+  property8 [===================================>................] 11/16 queries
+  property8 [=======================================>............] 12/16 queries
+  property8 [==========================================>.........] 13/16 queries
+  property8 [=============================================>......] 14/16 queries
+  property8 [================================================>...] 15/16 queries
+  property8 [====================================================] 16/16 queries
+Verifying properties:
+    result: [92m🗸[m - abcrown proved no counterexample exists
